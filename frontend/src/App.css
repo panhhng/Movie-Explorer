@@ -1,0 +1,123 @@
+/* Global Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #000000; /* Black background */
+  color: #ffffff; /* White text */
+}
+
+h2 {
+  text-align: center;
+}
+
+a {
+  color: #1e90ff; /* Blue links */
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+button {
+  background-color: #808080; /* Gray button */
+  color: #ffffff; /* White text */
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #696969; /* Darker gray on hover */
+}
+
+input[type="text"] {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ffffff; /* White border */
+  color: #000000; /* Black text */
+  width: calc(100% - 110px); /* Full width minus button width */
+}
+
+form {
+  margin: 20px;
+  display: flex; /* Use Flexbox for layout */
+  align-items: center;
+}
+
+form input[type="text"] {
+  flex: 1; /* Grow to fill available space */
+}
+
+form button {
+  width: 110px; /* Fixed width for the button */
+}
+
+.container {
+  padding: 20px;
+}
+
+/* Grid Layout Styles */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 15px; /* Increased gap for more spacing */
+}
+
+.movie-card {
+  border-radius: 5px;
+  padding: 10px;
+  background: linear-gradient(135deg, #2c2c2c, #1c1c1c); /* Gradient background */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transition for smooth floating effect */
+}
+
+.movie-card img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.movie-card h3 {
+  margin: 10px 0;
+  text-align: center;
+}
+
+.movie-card:hover {
+  transform: translateY(-10px); /* Moves the card up by 10px */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Adds a shadow for depth */
+  background: linear-gradient(135deg, #3c3c3c, #2c2c2c); /* Darker gradient on hover */
+}
+
+/* Header Styles */
+header {
+  background-color: #1e1e1e;
+  padding: 10px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+}
+
+/* Menu Bar Styles */
+.menu-bar {
+  background-color: #333333; /* Dark gray background */
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  border-radius: 5px;
+}
+
+.menu-bar button {
+  background-color: #808080; /* Gray button */
+  color: #ffffff; /* White text */
+  margin: 0 10px;
+}
+
+.menu-bar button:hover {
+  background-color: #696969; /* Darker gray on hover */
+}
